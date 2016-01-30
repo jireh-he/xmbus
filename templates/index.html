@@ -1,0 +1,307 @@
+{% extends "base.html" %}
+
+ {% block navbarcolumns %}
+   <ul>
+   <li><a href="#">test</a></li>
+   </ul>
+ {% endblock %}
+
+ {% block homecolumns %}
+   <ul>
+   <li><a href="#" class="current"><span>test</span></a></li>
+   <li><a href="#"><span>test</span></a></li>
+   <li><a href="#"><span>test</span></a></li>
+   </ul>
+{% endblock %}
+
+{% block jssection %}
+<script type="text/javascript" src="/static/js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript" src="/static/js/cufon-yui.js"></script>
+<script type="text/javascript" src="/static/js/jquery.cycle.min.all.js"></script>
+<script type="text/javascript" src="/static/js/jquery.easing.js"></script>
+<script type="text/javascript" src="/static/js/jquery.easing.names.js"></script>
+<script type="text/javascript" src="/static/js/TitilliumText15L_100-TitilliumText15L_400.font.js"></script>
+<script type="text/javascript" src="/static/js/custom.js"></script>
+<script type="text/javascript" >
+//倒计时开始滚动
+countdownFrom = 10;
+
+slideSpeed = 2000;
+slideTimeout = 10000;
+
+
+
+/* dont' edit anything below here unless you're sure about what you're doing  */
+
+
+$(window).load(function () {
+        getStarted()
+});
+
+//Cufon.replace('http://chillyblues.chillyorange.com/h1');
+//Cufon.replace('http://chillyblues.chillyorange.com/h2');
+
+slidesPause = 0;
+
+function getStarted(){
+
+        if(countdownFrom > 0) {
+
+                cdown = setInterval(function(){
+
+                        if(countdownFrom == 0) {
+
+                                clearInterval(cdown);
+
+                                $('#rightCorner').click(function(){
+
+                                        if(slidesPause == 0) {
+
+                                                $('#slides').cycle('pause');
+                                                $('#rightCorner').css("background", "url(/static/images/slideNavRight.gif) bottom no-repeat");
+                                                slidesPause = 1;
+
+                                        } else {
+
+                                                $('#slides').cycle('resume');
+                                                $('#rightCorner').css("background", "url(/static/images/slideNavRight.gif) top no-repeat");
+                                                slidesPause = 0;
+
+                                        }
+                                });
+
+                                //hide beforeSlideshow
+
+                                $('#displayIn').animate({opacity:0}, 2000, function(){
+
+                                        $('#displayIn').css("background", "url(/static/images/mainDisplayBG.jpg) no-repeat bottom");
+
+                                        $('#beforeSlideshow').css("display", "none");
+                                        $('#slideshow').css("display", "block");
+
+                                        $('#displayIn').animate({opacity:1}, 3000);
+
+                                        //configfure spacer element in slnavBG
+
+                                        //activate slideshow
+                                        $('#slides').cycle({
+                                        fx:     'scrollHorz',
+                                        speed:  slideSpeed,
+                                        timeout: slideTimeout,
+                                        delay:  -2000,
+                                        next:   '#next',
+                                        prev:   '#previous',
+                                        pager:  '#slnav',
+                                        easing: 'backinout'
+                                        });
+
+                                        $('#slnavSpacer').css("width", 880 - (24*$('div#slides>div.slide').length));
+
+                                        $('.slide').css("background", "none");
+                                })
+
+                        } else {
+
+                                countdownFrom = countdownFrom - 1;
+
+                                $('#count')[0].innerHTML = countdownFrom;
+
+                        }
+
+                }, 1000);
+
+        } else if(countdownFrom == -1) {
+
+                $('#rightCorner').click(function(){
+
+                        if(slidesPause == 0) {
+
+                                $('#slides').cycle('pause');
+                                $('#rightCorner').css("background", "url(/static/images/slideNavRight.gif) bottom no-repeat");
+                                slidesPause = 1;
+
+                        } else {
+
+                                $('#slides').cycle('resume');
+                                $('#rightCorner').css("background", "url(/static/images/slideNavRight.gif) top no-repeat");
+                                slidesPause = 0;
+
+                        }
+                });
+
+                $('#displayIn').css("background", "url(/static/images/mainDisplayBG.jpg) no-repeat bottom");
+
+                $('#beforeSlideshow').css("display", "none");
+                $('#slideshow').css("display", "block");
+
+                //activate slideshow
+                $('#slides').cycle({
+                fx:     'scrollHorz',
+                speed:  slideSpeed,
+                timeout: slideTimeout,
+                delay:  -2000,
+                next:   '#next',
+                prev:   '#previous',
+                pager:  '#slnav',
+                easing: 'backinout'
+                });
+
+                $('#slnavSpacer').css("width", 880 - (24*$('div#slides>div.slide').length));
+
+                $('.slide').css("background", "none");
+
+        } else {
+
+                $('#countdown').css("visibility", "hidden");
+
+        }
+}
+
+</script>
+{% endblock %}
+
+
+{% block content %}
+{% include "nav.html" %}
+		<div class="grid_16" id="mainDisplay">
+		
+			<div id="displayIn">
+			
+				<div id="beforeSlideshow">
+					<div id="countdown">倒计时滚动播放 &nbsp;&nbsp;<span id="count"><script type="text/javascript">document.write(countdownFrom)</script></span></div>
+					<h1>We're all kinds of awesome!</h1>
+					<div class="clear"></div>
+					<h2>With over 15 years of experience, we build jaw-dropping, fingerlicking-good stuff for the Internet.</h2>
+					<div class="clear"></div>
+					<div id="buttons">
+						<a href="about.html" class="button_aa" id="leftButton"><span>find out more about us</span></a>
+						<a href="#" class="button_aa" id="rightButton"><span>get a free quote now</span></a>
+					</div>
+				</div>
+			
+				<div id="slideshow">
+					<div id="slideNav">
+						<div id="leftCorner"></div>
+						<div id="rightCorner"></div>
+						<div id="slnav"><div id="slnavSpacer"></div></div>
+					</div>
+					<div>
+						<div id="previous"></div>
+						<div id="next"></div>
+					
+						<div id="slides"><!-- this is the main container for your slides -->
+						
+							<div class="slide">
+								<div class="caption">
+									<h2>Themeforest1</h2>
+									<p>
+									Lorem ipsum dolor sit amet, consectetur adipisc ing elit. Vivamus mattis convallis turpis. In hac habitasse platea dictumst. Aliquam dignis sim tinci dunt nunc nec venenatis.
+									</p>
+								</div>
+								<div class="sImCon">
+									<img src="/static/slideshow/slide1.jpg" alt="slide1" />
+								</div>
+							</div>
+							<div class="slide">
+								<div class="caption">
+									<h2>Themeforest2</h2>
+									<p>
+									Lorem ipsum dolor sit amet, consectetur adipisc ing elit. Vivamus mattis convallis turpis. In hac habitasse platea dictumst. Aliquam dignis sim tinci dunt nunc nec venenatis.
+									</p>
+								</div>
+								<div class="sImCon">
+									<img src="/static/slideshow/slide1.jpg" alt="slide1" />
+								</div>
+							</div>
+							<div class="slide">
+								<div class="caption">
+									<h2>Themeforest3</h2>
+									<p>
+									Lorem ipsum dolor sit amet, consectetur adipisc ing elit. Vivamus mattis convallis turpis. In hac habitasse platea dictumst. Aliquam dignis sim tinci dunt nunc nec venenatis.
+									</p>
+								</div>
+								<div class="sImCon">
+									<img src="/static/slideshow/slide1.jpg" alt="slide1" />
+								</div>
+							</div>
+							<div class="slide">
+								<div class="caption">
+									<h2>Themeforest1</h2>
+									<p>
+									Lorem ipsum dolor sit amet, consectetur adipisc ing elit. Vivamus mattis convallis turpis. In hac habitasse platea dictumst. Aliquam dignis sim tinci dunt nunc nec venenatis.
+									</p>
+								</div>
+								<div class="sImCon">
+									<img src="/static/slideshow/slide1.jpg" alt="slide1" />
+								</div>
+							</div>
+							<div class="slide">
+								<div class="caption">
+									<h2>Themeforest2</h2>
+									<p>
+									Lorem ipsum dolor sit amet, consectetur adipisc ing elit. Vivamus mattis convallis turpis. In hac habitasse platea dictumst. Aliquam dignis sim tinci dunt nunc nec venenatis.
+									</p>
+								</div>
+								<div class="sImCon">
+									<img src="/static/slideshow/slide1.jpg" alt="slide1" />
+								</div>
+							</div>
+					
+						</div><!-- /#slides -->
+					
+					</div><!-- /#slideshow -->
+					
+				</div><!-- /#displayIn -->
+			
+			</div>
+		</div><!-- /#mainDisplay -->
+		<div class="clear"></div>
+		
+	</div><!-- /#main -->
+		<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>	
+	<div class="container_16" id="content">
+		
+		<div class="grid_11 content" id="two_col">
+			<h2>ChillyBlues: topnotch web builders</h2>
+			<p>
+			<img src="/static/images/aboutus.jpg" alt="aboutus" />ChillyBlues is a clean, business-oriented template with a blue, orange and 
+			grey shaded color theme. ChillyBlues is escpecially suitable for tech and web companies looking to strengthen their online presence. It includes features
+			like an extremely flexible, yet easy to customize slider; 8 fully coded pages
+			(nothing but 100% valid, table-less, XHTML 1.0), a fully functional contact
+page; and much more!
+			</p>
+			<p>
+			The has numerous features and is easy to configure and customize thanks to the nicely layered and grouped PSD files and clear <a href="documentation/index.html">documentation</a>. For more info and features, have a look <a href="about.html">here</a>. 
+			</p>
+		</div><!-- /#left -->
+		<div class="grid_5 news" id="one_col">
+			<h2>新闻动态</h2>
+			<ul>
+			<li>
+				<div class="cal">
+					<div class="month">aug</div>
+					<div class="date">26</div>
+				</div>
+				<a href="post.html">First newsitem</a>
+			</li>
+			<li>
+				<div class="cal">
+					<div class="month">aug</div>
+					<div class="date">26</div>
+				</div>
+				<a href="post.html">Second newsitem</a>
+			</li>
+			<li>
+				<div class="cal">
+					<div class="month">aug</div>
+					<div class="date">26</div>
+				</div>
+				<a href="post.html">And a third newsitem</a>
+			</li>
+			</ul>
+			<a href="blog.html" id="moreNews">more news</a>
+			
+			
+		</div><!-- /#one_col -->
+	{% endblock %}

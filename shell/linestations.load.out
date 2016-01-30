@@ -1,0 +1,8 @@
+SQL*Loader-292: ROWS parameter ignored when an XML, LOB or VARRAY column is loaded
+
+SQL*Loader: Release 11.2.0.3.0 - Production on Sun Dec 20 20:18:02 2015
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+
+Load completed - logical record count 1174.

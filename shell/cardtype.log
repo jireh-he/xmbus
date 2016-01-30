@@ -1,0 +1,55 @@
+
+SQL*Loader: Release 11.2.0.3.0 - Production on Sun Dec 20 21:12:39 2015
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   cardtype.ctl
+Character Set ZHS16GBK specified for all input.
+
+Data File:      /mnt/hgfs/U/xmbus/txtdb/XMGJ_CARDTYPE.txt
+  Bad File:     bad_cardtype.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table BUSGPS_XMGJ_CARDTYPE, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CARDTYPEID                          FIRST     *   ,       CHARACTER            
+CARDTYPENAME                         NEXT     *   ,       CHARACTER            
+
+The following index(es) on table BUSGPS_XMGJ_CARDTYPE were processed:
+index MYORACLE.SYS_C0011172 loaded successfully with 232 keys
+
+Table BUSGPS_XMGJ_CARDTYPE:
+  232 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:           232
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        1
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Sun Dec 20 21:12:39 2015
+Run ended on Sun Dec 20 21:12:39 2015
+
+Elapsed time was:     00:00:00.21
+CPU time was:         00:00:00.05

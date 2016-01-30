@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{% block title %}欢迎光临{% endblock title %} </title>
+<link rel="stylesheet" href="/static/css/960.css" type="text/css" />
+<link rel="stylesheet" href="/static/css/reset.css" type="text/css" />
+<link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+<link rel="stylesheet" href="/static/css/jquery.dataTables.min.css" type="text/css" />
+<link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="/static/css/bootstrap-theme.min.css" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/static/css/ie_slidefix.css" type="text/css" />
+<![endif]-->
+<style type="text/css">
+
+body {
+	background: #f9fafb url(/static/images/bg.gif) top repeat-x;
+}
+
+</style>
+{% block jssection %}
+{% endblock %}
+</head>
+
+<body>
+	<div class="container container_16" id="main">
+	{% block content %}
+	{% endblock %}
+		
+	
+		<div class="clear"></div>
+		
+	</div><!-- /#content -->
+{% include 'foot.html' %}
+		
+<script type="text/javascript"> Cufon.now(); </script>
+
+</body>
+</html>

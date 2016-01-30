@@ -1,0 +1,39 @@
+               <div class="grid_16" id="top">
+                        <a href="#" id="qsm">快捷导航 <img id="down" src="/static/images/dropdowntriangle.gif" alt="dropdown" /><img id="up" src="/static/images/dropdowntriangle_.gif" alt="dropdown" /></a>
+                        <div id="qsmContainer">
+                                <div id="qsmTop"></div>
+                                <div id="qsmMiddle">
+                                        <div id="search">
+                                                <input type="text" value="站内搜索" onfocus="if(this.value == '站内搜索'){this.value = ''}" />
+                                                <img src="/static/images/search.gif" alt="点击搜索" />
+                                        </div>
+                                        <div class="clear"></div>
+					{% block navbarcolumns %} 
+                                        <ul>
+                                        <li><a href="#">test</a></li>
+                                        </ul>
+
+					{% endblock %}
+                                </div><!-- /#qsmMiddle -->
+                                <div id="qsmBottom"></div>
+                        </div>
+                </div>
+                <div class="clear"></div>
+
+                <div class="grid_16" id="logo">
+                        <a href="{% url 'index' %}"><img src="/static/images/logo.gif" alt="无争小筑" /></a>
+                </div>
+                <div class="clear"></div>
+
+                <div class="grid_16" id="navigation">
+			{% block homecolumns %}
+                      <ul>
+
+                                        <li><a href="#" class="current"><span>test</span></a></li>
+                                        <li><a href="#"><span>test</span></a></li>
+                                        <li><a href="#"><span>test</span></a></li>
+                        </ul>
+			{% endblock %}
+                        <div id="triSlideContainer"><img src="/static/images/currentarrow.gif" alt="arrow" /></div>
+                </div>
+                <div class="clear"></div>

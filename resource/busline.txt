@@ -1,0 +1,39 @@
+﻿var showBusLine=function(xianluhao){
+	if(!xianluhao)
+		return false;
+	$("#busline-result").remove();
+	$("<p><div id='busline-result'></div>").insertAfter("#allmap");
+	var busline = new BMap.BusLineSearch(map,{
+		renderOptions:{map:map,panel:"busline-result"},
+			onGetBusListComplete: function(result){
+			   if(result) {
+				 var fstLine = result.getBusListItem(0);//获取第一个公交列表显示到map上
+				 busline.getBusLine(fstLine);
+				 $("#busline-result").hide();
+				 
+			   }
+			},
+			onGetBusLineComplete:function(bl){
+				//alert(bl.getNumBusStations());
+				//alert(bl.getBusStation(0).name);
+				var busStation=[];
+				var len=bl.getNumBusStations();
+				for(var k=0;k<len;k++)
+				{
+					busStation.push(bl.getBusStation(k).name);
+				}
+				$('body').data('bus',busStation);
+			}
+	});
+
+	function busSearch(){
+		
+		var busName = xianluhao.substring(0,xianluhao.length-1);
+		busline.getBusList(busName);
+	}
+	setTimeout(function(){
+		busSearch();
+	},1500);
+	
+
+};

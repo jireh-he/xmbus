@@ -1,0 +1,272 @@
+
+SQL*Loader: Release 11.2.0.3.0 - Production on Tue Jan 19 23:58:48 2016
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   linestations.ctl
+Character Set UTF8 specified for all input.
+First primary datafile /mnt/hgfs/U/xmbus/txtdb/tab_linestations.txt has a
+ utf8 byte order mark in it.
+
+Data File:      /mnt/hgfs/U/xmbus/txtdb/tab_linestations.txt
+  Bad File:     bad_linestations.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table BUSGPS_TAB_LINESTATIONS, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ID                                                        RECNUM
+XLH                                 FIRST     *   ,       CHARACTER            
+ZDM                                  NEXT     *   ,       CHARACTER            
+UPDOWN                               NEXT     *   ,       CHARACTER            
+ZDXH                                 NEXT     *   ,       CHARACTER            
+JINGDU                               NEXT     *   ,       CHARACTER            
+    SQL string for column : "to_number(:jingdu)/1000000"
+WEIDU                                NEXT     *   ,       CHARACTER            
+    SQL string for column : "to_number(:weidu)/1000000"
+QITA                                 NEXT     *   ,       CHARACTER            
+
+Record 107: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 110: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 162: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 461: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 553: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 564: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 665: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 668: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 669: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 769: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 819: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 1373: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 1546: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 1904: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 2351: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 2585: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 2951: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 3594: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 3598: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 3715: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 3752: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 3799: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 4042: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 4125: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 4726: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 4727: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 5048: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 5491: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 5776: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 5815: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 5824: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 5905: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 5919: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 5920: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 5921: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 5997: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 6050: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 6185: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 6366: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 6500: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 6624: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 6848: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 7010: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 7325: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 8361: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 8369: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 8374: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 8491: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 8563: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 8755: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Record 9184: Rejected - Error on table BUSGPS_TAB_LINESTATIONS.
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01722: invalid number
+
+Specify SKIP=9184 when continuing the load.
+The following index(es) on table BUSGPS_TAB_LINESTATIONS were processed:
+index MYORACLE.SYS_C0011185 loaded successfully with 9133 keys
+index MYORACLE.XLH_IDX loaded successfully with 9133 keys
+
+MAXIMUM ERROR COUNT EXCEEDED - Above statistics reflect partial run.
+
+Table BUSGPS_TAB_LINESTATIONS:
+  9133 Rows successfully loaded.
+  51 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records rejected:        51
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       52
+Total stream buffers loaded by SQL*Loader load thread:        2
+
+Run began on Tue Jan 19 23:58:48 2016
+Run ended on Tue Jan 19 23:58:51 2016
+
+Elapsed time was:     00:00:02.61
+CPU time was:         00:00:00.62

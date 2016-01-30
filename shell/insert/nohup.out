@@ -1,0 +1,353 @@
+
+SQL*Plus: Release 11.2.0.3.0 Production on Sun Jan 10 21:58:23 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> 
+Session altered.
+
+SQL> 
+Table altered.
+
+SQL>   2  
+1084704 rows created.
+
+SQL> 
+Commit complete.
+
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Tue Jan 12 10:50:52 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> 
+Session altered.
+
+SQL> 
+Table altered.
+
+SQL>   2  
+1336960 rows created.
+
+SQL> 
+Commit complete.
+
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Tue Jan 12 13:24:11 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> 
+Session altered.
+
+SQL> 
+Table altered.
+
+SQL>   2  
+1296756 rows created.
+
+SQL> 
+Commit complete.
+
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Sun Jan 17 22:51:21 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL>   2    3    4    5    6    7    8    9   10   11  Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+nohup.out: line 2: SQL*Plus:: command not found
+nohup.out: line 4: syntax error near unexpected token `c'
+nohup.out: line 4: `Copyright (c) 1982, 2011, Oracle.  All rights reserved.'
+
+SQL*Plus: Release 11.2.0.3.0 Production on Sun Jan 17 22:53:53 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL>   2    3    4    5    6    7    8    9   10   11  Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Sun Jan 17 22:55:56 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> 
+Session altered.
+
+SQL> 
+Table altered.
+
+SQL>   2    3    4    5    6    7    8    9  Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Sun Jan 17 22:57:51 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> 
+Session altered.
+
+SQL> 
+Table altered.
+
+SQL>   2  
+1425346 rows created.
+
+SQL> SP2-0734: unknown command beginning "if(mod(sql..." - rest of line ignored.
+SQL> 
+Commit complete.
+
+SQL> SP2-0042: unknown command "end if" - rest of line ignored.
+SQL> 
+Commit complete.
+
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Mon Jan 18 23:10:28 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> SQL>   2    3    4    5    6    7    8    9   10   11   12   13   14   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29   30   31   32   33   34   35   36   37   38   39   40   41   42   43   44   45   46  Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Mon Jan 18 23:11:35 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL>  48  Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Mon Jan 18 23:22:00 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> BEGIN insert_etk_zhandian('2014050500'); END;
+
+                          *
+ERROR at line 1:
+ORA-06550: line 1, column 27:
+PLS-00363: expression '2014050500' cannot be used as an assignment target
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Mon Jan 18 23:23:54 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> BEGIN insert_etk_zhandian(endTime=>'2014050500'); END;
+
+                          *
+ERROR at line 1:
+ORA-06550: line 1, column 27:
+PLS-00363: expression '2014050500' cannot be used as an assignment target
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Mon Jan 18 23:27:37 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> insert0504.sh: line 3:  3654 Killed                  sqlplus myoracle/myoracle  <<!
+	execute insert_etk_zhandian(endTime=>'2014050500');
+!
+
+
+SQL*Plus: Release 11.2.0.3.0 Production on Mon Jan 18 23:58:36 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> insert0504.sh: line 3:  3846 Terminated              sqlplus myoracle/myoracle  <<!
+	execute insert_etk_zhandian(endTime=>'2014050500');
+!
+
+
+SQL*Plus: Release 11.2.0.3.0 Production on Tue Jan 19 00:12:39 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> 
+PL/SQL procedure successfully completed.
+
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Tue Jan 19 03:13:43 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> 
+PL/SQL procedure successfully completed.
+
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Tue Jan 19 03:22:52 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> BEGIN insert_etk_zhandian(endTime=>'2014050700'); END;
+
+*
+ERROR at line 1:
+ORA-03113: end-of-file on communication channel
+Process ID: 4907
+Session ID: 197 Serial number: 315
+
+
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Tue Jan 19 03:30:22 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> 
+PL/SQL procedure successfully completed.
+
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Tue Jan 19 03:30:43 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> 
+PL/SQL procedure successfully completed.
+
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Tue Jan 19 10:22:15 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> 
+PL/SQL procedure successfully completed.
+
+SQL> SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL*Plus: Release 11.2.0.3.0 Production on Tue Jan 19 12:12:36 2016
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> 
+PL/SQL procedure successfully completed.
+
+SQL> SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options

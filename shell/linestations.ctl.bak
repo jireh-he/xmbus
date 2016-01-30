@@ -1,0 +1,17 @@
+LOAD DATA 
+CHARACTERSET ZHS16GBK 
+INFILE '/mnt/hgfs/U/xmbus/txtdb/tab_linestations.txt'  
+BADFILE 'bad_linestations.bad' 
+TRUNCATE INTO TABLE BUSGPS_TAB_LINESTATIONS  
+FIELDS TERMINATED BY ","
+TRAILING NULLCOLS
+(
+id RECNUM,
+xlh, 
+zdm, 
+updown, 
+zdxh, 
+jingdu, 
+weidu, 
+qita
+)

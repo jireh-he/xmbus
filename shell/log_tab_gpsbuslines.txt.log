@@ -1,0 +1,124 @@
+
+SQL*Loader: Release 11.2.0.3.0 - Production on Fri Dec 18 16:26:14 2015
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   tab_gpsbuslines.txt.ctl
+Character Set ZHS16GBK specified for all input.
+
+Data File:      /mnt/hgfs/U/xmbus/txtdb/tab_gpsbuslines.txt.temp
+  Bad File:     bad_tab_gpsbuslines.txt.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10000
+Bind array:     100000 rows, maximum of 16384000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table BUSGPS_TAB_GPSBUSLINES, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+FENZUMING                           FIRST     *   ,       CHARACTER            
+XIANLUHAO                            NEXT     *   ,       CHARACTER            
+CHEPAIHAO                            NEXT     *   ,       CHARACTER            
+SHEBEIID                             NEXT     *   ,       CHARACTER            
+SIMKAHAO                             NEXT     *   ,       CHARACTER            
+
+value used for ROWS parameter changed from 100000 to 12700
+Record 328: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 1126: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 1127: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 1212: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 3395: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4134: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4135: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4136: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4271: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4436: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4472: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4473: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4474: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4486: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4487: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4488: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4616: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4621: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4622: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4623: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4729: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4730: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+Record 4731: Rejected - Error on table BUSGPS_TAB_GPSBUSLINES.
+ORA-00001: ???????? (MYORACLE.SYS_C0011181)
+
+
+Table BUSGPS_TAB_GPSBUSLINES:
+  4742 Rows successfully loaded.
+  23 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:               16383000 bytes(12700 rows)
+Read   buffer bytes:16384000
+
+Total logical records skipped:          0
+Total logical records read:          4765
+Total logical records rejected:        23
+Total logical records discarded:        0
+
+Run began on Fri Dec 18 16:26:14 2015
+Run ended on Fri Dec 18 16:26:15 2015
+
+Elapsed time was:     00:00:01.32
+CPU time was:         00:00:00.59

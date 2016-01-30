@@ -1,0 +1,233 @@
+
+SQL*Loader: Release 11.2.0.3.0 - Production on Mon Dec 21 15:34:42 2015
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   gpsinfodata.ctl
+Character Set ZHS16GBK specified for all input.
+
+There are 31 data files:
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140501.txt
+  Bad File:     bad_gpsinfodata.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140502.txt
+  Bad File:     TAB_GPSINFODATA140502.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140503.txt
+  Bad File:     TAB_GPSINFODATA140503.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140504.txt
+  Bad File:     TAB_GPSINFODATA140504.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140505.txt
+  Bad File:     TAB_GPSINFODATA140505.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140506.txt
+  Bad File:     TAB_GPSINFODATA140506.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140507.txt
+  Bad File:     TAB_GPSINFODATA140507.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140508.txt
+  Bad File:     TAB_GPSINFODATA140508.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140509.txt
+  Bad File:     TAB_GPSINFODATA140509.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140510.txt
+  Bad File:     TAB_GPSINFODATA140510.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140511.txt
+  Bad File:     TAB_GPSINFODATA140511.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140512.txt
+  Bad File:     TAB_GPSINFODATA140512.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140513.txt
+  Bad File:     TAB_GPSINFODATA140513.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140514.txt
+  Bad File:     TAB_GPSINFODATA140514.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140515.txt
+  Bad File:     TAB_GPSINFODATA140515.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140516.txt
+  Bad File:     TAB_GPSINFODATA140516.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140517.txt
+  Bad File:     TAB_GPSINFODATA140517.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140518.txt
+  Bad File:     TAB_GPSINFODATA140518.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140519.txt
+  Bad File:     TAB_GPSINFODATA140519.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140520.txt
+  Bad File:     TAB_GPSINFODATA140520.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140521.txt
+  Bad File:     TAB_GPSINFODATA140521.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140522.txt
+  Bad File:     TAB_GPSINFODATA140522.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140523.txt
+  Bad File:     TAB_GPSINFODATA140523.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140524.txt
+  Bad File:     TAB_GPSINFODATA140524.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140525.txt
+  Bad File:     TAB_GPSINFODATA140525.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140526.txt
+  Bad File:     TAB_GPSINFODATA140526.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140527.txt
+  Bad File:     TAB_GPSINFODATA140527.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140528.txt
+  Bad File:     TAB_GPSINFODATA140528.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140529.txt
+  Bad File:     TAB_GPSINFODATA140529.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140530.txt
+  Bad File:     TAB_GPSINFODATA140530.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /mnt/hgfs/U/xmbus/txtdb/TAB_GPSINFODATA140531.txt
+  Bad File:     bad_gpsinfodata.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table BUSGPS_TAB_GPSINFODATA, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+HISID                               FIRST     *   ,       CHARACTER            
+DEVIDSTR                             NEXT     *   ,       CHARACTER            
+STIME                                NEXT     *   ,       CHARACTER            
+    SQL string for column : "to_timestamp(:stime,'yyyy-mm-dd hh24:mi:ss')"
+GTIME                                NEXT     *   ,       CHARACTER            
+    SQL string for column : "to_timestamp(:gtime,'yyyy-mm-dd hh24:mi:ss.ff3')"
+ATYPE                                NEXT     *   ,       CHARACTER            
+ISLOCAT                              NEXT     *   ,       CHARACTER            
+LATITUDE                             NEXT     *   ,       CHARACTER            
+    SQL string for column : "to_number(:latitude)/1000000"
+LONGTITUDE                           NEXT     *   ,       CHARACTER            
+    SQL string for column : "to_number(:longtitude)/1000000"
+HIGHT                                NEXT     *   ,       CHARACTER            
+SPEED                                NEXT     *   ,       CHARACTER            
+DIRECTION                            NEXT     *   ,       CHARACTER            
+S1                                   NEXT     *   ,       CHARACTER            
+S2                                   NEXT     *   ,       CHARACTER            
+S3                                   NEXT     *   ,       CHARACTER            
+S4                                   NEXT     *   ,       CHARACTER            
+ISREPLACE                            NEXT     *   ,       CHARACTER            
+CARTYPE                              NEXT     *   ,       CHARACTER            
+ISSTATION                            NEXT     *   ,       CHARACTER            
+STATION_ID                           NEXT     *   ,       CHARACTER            
+AREA_ID                              NEXT     *   ,       CHARACTER            
+SUMDIS                               NEXT     *   ,       CHARACTER            
+BUSLINE_NO                           NEXT     *   ,       CHARACTER            
+
+The following index(es) on table BUSGPS_TAB_GPSINFODATA were processed:
+index MYORACLE.BU_GTIME_4C167A31525446D9_UNIQ loaded successfully with 87679544 keys
+index MYORACLE.D2FBAD91446B19410F5938D3B8FB76 loaded successfully with 87679544 keys
+index MYORACLE.SYS_C0011209 was made unusable due to:
+ORA-01452: cannot CREATE UNIQUE INDEX; duplicate keys found
+
+Table BUSGPS_TAB_GPSINFODATA:
+  87679544 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:      87679544
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:    28253
+Total stream buffers loaded by SQL*Loader load thread:    42346
+
+Run began on Mon Dec 21 15:34:42 2015
+Run ended on Mon Dec 21 16:42:18 2015
+
+Elapsed time was:     01:07:35.64
+CPU time was:         00:25:23.13
