@@ -1,38 +1,1 @@
-{% extends "base.html" %}
-{% block jssection %}
-<script type="text/javascript" src="/static/js/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=BFcd9e84753ab8dcef34748bc43f952d"></script>
-<script type="text/javascript" src="/static/js/jquery-ui-1.7.2.custom.min.js"></script>
-<script type="text/javascript" src="/static/js/cufon-yui.js"></script>
-<script type="text/javascript" src="/static/js/jquery.cycle.min.all.js"></script>
-<script type="text/javascript" src="/static/js/jquery.easing.js"></script>
-<script type="text/javascript" src="/static/js/jquery.easing.names.js"></script>
-<script type="text/javascript" src="/static/js/TitilliumText15L_100-TitilliumText15L_400.font.js"></script>
-<script type="text/javascript" src="/static/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="/static/js/linesarray.js"></script>
-<script type="text/javascript" src="/static/js/buslines.js"></script>
-<style type="text/css">
-#showbus {
-	height:600px;
-}
-	</style>
-<script>
-$.ajaxSetup({
-        data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
-});
-</script>
-{% endblock %}
-
-{% block content %}
-<div class="content">
-	<div class="btn-group" role="group">
-		<button type="button" class="btn btn-default" id='showbtn'>加载</button>
-
-		<button type="button" class="btn btn-default" id='savebtn'>保存</button>
-		</div>
-<div id='showbus'>
-	</div>
-</div>
-
-{% endblock %}
+{% extends "base.html" %}{% block jssection %}<script type="text/javascript" src="/static/js/jquery-1.12.0.min.js"></script><script type="text/javascript" src="/static/js/bootstrap.min.js"></script><script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=BFcd9e84753ab8dcef34748bc43f952d"></script><script type="text/javascript" src="/static/js/jquery-ui-1.7.2.custom.min.js"></script><script type="text/javascript" src="/static/js/cufon-yui.js"></script><script type="text/javascript" src="/static/js/jquery.cycle.min.all.js"></script><script type="text/javascript" src="/static/js/jquery.easing.js"></script><script type="text/javascript" src="/static/js/jquery.easing.names.js"></script><script type="text/javascript" src="/static/js/TitilliumText15L_100-TitilliumText15L_400.font.js"></script><script type="text/javascript" src="/static/js/jquery.dataTables.min.js"></script><script type="text/javascript" src="/static/js/linesarray.js"></script><script type="text/javascript" src="/static/js/buslines.js"></script><style type="text/css">#showbus {	height:600px;}	</style><script>$.ajaxSetup({        data: {csrfmiddlewaretoken: '{{ csrf_token }}' },});</script>{% endblock %}{% block content %}<div class="content" style="padding-top: 10px">	<div class="btn-group" role="group">        <button type="button" class="btn btn-default" id='downline'>下载公交线路</button>		<button type="button" class="btn btn-default" id='showbtn'>显示公交线路</button>		<button type="button" class="btn btn-default" id='savebtn'>保存公交线路</button>		</div><div id='showbus'>	</div></div>{% endblock %}

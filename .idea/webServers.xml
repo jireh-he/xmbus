@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fe404b10-75ff-45f4-8056-f8c831f4b08e" name="192.168.72.100" url="http://192.168.72.100:8081">
+        <fileTransfer host="192.168.72.100" port="22" rootFolder="/home/ap/python/djproject" accessType="SFTP" password="dfdadfd3dfdedfc2dfc5dfc4" username="python">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

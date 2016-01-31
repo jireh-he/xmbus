@@ -158,10 +158,12 @@ class Bd_Buslines(models.Model):
 	xlh=models.CharField('线路号',max_length=20,null=True)
 	zdm=models.CharField('站点名',max_length=50,null=True)
 	updown=models.CharField('上下行_上0_下1',max_length=10,null=True)
-	zdxh=models.CharField('站点序号',max_length=10,null=True)
+	zdxh=models.IntegerField('站点序号',null=True)
 	jingdu=models.DecimalField('经度',null=True,max_digits=10,decimal_places=6)
 	weidu=models.DecimalField('纬度',null=True,max_digits=10,decimal_places=6)
 	qita=models.CharField('其他',max_length=100,null=True)
+	gpslng=models.DecimalField('GPS经度',null=True,max_digits=10,decimal_places=6)
+	gpslat=models.DecimalField('GPS纬度',null=True,max_digits=10,decimal_places=6)
 	def __str__(self):
         	return self.zdm
 	

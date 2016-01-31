@@ -1,11 +1,15 @@
 $(function(){
-	for(var j=0;j<lines.length;j++)
-	{
+
+	$("#downline").click(function(){
+		for(var j=0;j<lines.length;j++)
+		{
 		var l=lines[j].replace(/\b(0+)/gi,"");
 		showBusLine(l);
-	
-	}
-	$("#showbtn").click(function(){loadData();});
+		}
+		});
+	$("#showbtn").click(function(){
+		loadData();
+		});
     $("#savebtn").click(function(){saveData();});
 });
 var showBusLine=function(xianluhao){
@@ -14,15 +18,12 @@ var showBusLine=function(xianluhao){
 	var busline = new BMap.BusLineSearch('厦门',{
 			onGetBusListComplete: function(result){
 			   if(result) {
-				 var fstLine = result.getBusListItem(0);//获取第一个公交列表显示到map上
+				 var fstLine = result.getBusListItem(1);//获取第一个公交列表显示到map上
 				 busline.getBusLine(fstLine);
 				 
 			   }
 			},
 			onGetBusLineComplete:function(bl){
-				//alert(bl.getNumBusStations());
-				//alert(bl.getBusStation(0).name);
-
 				var len=bl.getNumBusStations();
 		
 				var buslist=$('body').data('bus');
@@ -36,6 +37,7 @@ var showBusLine=function(xianluhao){
 					columns.push(bs.name);
 					columns.push(bs.position.lng);
 					columns.push(bs.position.lat);
+					columns.push(k);
 					buslist.push(columns);
 				}
 				$('body').data('bus',buslist);
@@ -69,6 +71,7 @@ var loadData=function(){
    	columns.push({"title":"站点名"});
    	columns.push({"title":"经度"});
    	columns.push({"title":"纬度"});
+	columns.push({"title":"站点序号"});
  
    	$("#tableshow").dataTable({
    		"data":dataset,
@@ -83,10 +86,10 @@ var saveData=function(){
         url:'/savebus',
         method:'POST',
         data:{
-            "bsdata":dataset
-        },
+			"bsdata":dataset,
+		},
         success:function(res){
-            $("#showbus").html(res.cnt);
+            $("#showbus").html('成功导入'+res.cnt+'条记录');
 
         },
     });
