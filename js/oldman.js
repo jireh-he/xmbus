@@ -17,7 +17,7 @@ var svg = d3.select("#totalshow").append("svg")
 //颜色比例尺
 var color=d3.scale.category10();
 var names=["刷卡人次","出行人数","老人刷卡次数","老人出行人数"];
-d3.json("/static/newjs/oldman.json", function(error, data) {
+d3.json("js/oldman.json", function(error, data) {
   if (error) return console.warn(error);
   drawLegend(color,data.dataset);
   drawStack(data.dataset);
