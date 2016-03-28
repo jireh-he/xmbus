@@ -21,7 +21,7 @@ var diagonal = d3.svg.diagonal()
     .projection(function(d) { return [d.y, d.x]; });
 
 
-d3.json("/static/newjs/overview.json",function(error,root){
+d3.json("js/overview.json",function(error,root){
 
   //给第一个节点添加初始坐标x0和x1
   root.x0 = height / 2;
