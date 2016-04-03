@@ -15,10 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-
+from citybus.views import stationsview,savepoints
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'busgps.views.index', name='index'),
     url(r'^bus', 'busgps.views.getBuslines', name='buslines'),
     url(r'^savebus', 'busgps.views.saveBuslines', name='savebus'),
+    url(r'^stationsview',stationsview,name='stationsview'),
+    url(r'^savepoints',savepoints,name='savepoints'),
+    url(r'^cntperday','busgps.views.countperday',name='cntperday'),
+    url(r'^theolds','busgps.views.theolds',name='theolds'),
+    url(r'^heat','busgps.views.oldmanheat',name='heat')
 ]

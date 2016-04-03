@@ -1,0 +1,100 @@
+{
+"name":"厦门老人出行研究",
+"_children":
+[
+	{
+	  "name":"准备阶段" ,
+  	  "_children":
+  	  [
+	  	  	{"name":"E通卡公司",
+              "_children":
+              [
+                {"name": "E通卡刷卡数据表"},
+                {"name":"卡类型对照表"},
+                { "name":"公交线路站点表"},
+                {  "name":"公交车牌号与GPS设备号对照表"}
+              ]
+            },
+	  	  	{"name":"GPS厂商",
+              "_children":[
+                {
+                  "name":"GPS采集信息表"
+                }
+              ]
+
+            },
+            {"name":"环境部署",
+              "_children":[
+                {
+                  "name":"Oracle数据库"
+                },
+                {
+                  "name":"python&Django服务器"
+                },
+                {
+                  "name":"PyCharm IDE编辑器"
+                }
+              ]
+
+            }
+  	  ]
+  	},
+
+	{
+		"name":"数据分析" ,
+		"_children":
+		[
+			{
+				"name":"数据整理",
+				"_children":
+				[
+					{"name":"一致性",
+                      "_children":
+                      [
+                        {"name":"公交车牌格式整理"}
+                      ]
+                    },
+					{"name":"准确性",
+                    "_children":[
+                      {"name":"车站GPS坐标校正"}
+                    ]
+                    },
+					{"name":"高效性",
+                    "_children":[
+                      {"name":"关联查询字段建立索引"}
+                    ]
+                    }
+				]
+			},
+          {
+            "name":"逻辑模型",
+            "_children":[
+              {"name":"出行强度模型"},
+              {"name":"分布密集模型"}
+            ]
+          }
+		]
+	},
+
+	{
+		"name":"可视化表现",
+		"_children":
+		[
+          {
+            "name": "HTML5&D3",
+            "_children": [
+              {
+                "name": "总体步骤思维导图"
+              },
+              {
+                "name": "老人出行强度可视化分析"
+              },
+              {
+                "name": "老人出行分布可视化分析"
+              }
+            ]
+          }
+		]
+	}
+]
+}

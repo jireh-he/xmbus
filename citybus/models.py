@@ -9,6 +9,7 @@ from django.utils.encoding import python_2_unicode_compatible
 class CityList(models.Model):
     cityname = models.CharField("城市名", max_length=100, default="厦门")
     cityurl = models.CharField("网页链接地址", max_length=500, null=True)
+    cid=models.IntegerField('城市编号',null=True)
 
     def __str__(self):
         return self.cityname

@@ -19,13 +19,13 @@ var DateTimeShortcuts = {
     admin_media_prefix: '',
     init: function() {
         // Get admin_media_prefix by grabbing it off the window object. It's
-        // set in the admin/base.html template, so if it's not there, someone's
-        // overridden the template. In that case, we'll set a clearly-invalid
+        // set in the admin.bak/base.html templates, so if it's not there, someone's
+        // overridden the templates. In that case, we'll set a clearly-invalid
         // value in the hopes that someone will examine HTTP requests and see it.
         if (window.__admin_media_prefix__ != undefined) {
             DateTimeShortcuts.admin_media_prefix = window.__admin_media_prefix__;
         } else {
-            DateTimeShortcuts.admin_media_prefix = '/missing-admin-media-prefix/';
+            DateTimeShortcuts.admin_media_prefix = '/missing-admin.bak-media-prefix/';
         }
 
         if (window.__admin_utc_offset__ != undefined) {

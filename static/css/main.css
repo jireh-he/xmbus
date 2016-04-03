@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+‍/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 5px;
+}
+footer {
+  padding: 80px 0;
+  position:relative;
+  bottom:0;
+  height:60px;
+  left:0;
+}
+#allmap,#dataShow {
+	height:400px;
+}
+#showmain {
+	position:relative;
+	top:0px;
+}
+
+#rightbar{
+	 position:absolute;
+     display:block;
+	 float:right;
+	 z-index: 100;
+	 right:15px;
+	 top:5px;
+    }
+    
+#resultDiv  
+ {  
+	position:absolute; 	  
+    border: 1px solid #000;  
+    background: #fff;  
+    z-index: 999;
+ 	top:35px;  
+    width: 150px;  
+       
+ }  
+ #resultDiv li  
+ {  
+     cursor: default;  
+     padding: 2px 4px;  
+ }  
+ .esultDivLiHover  
+ {  
+     background: #cfcfcf;  
+ } 

@@ -10,6 +10,9 @@ class UrlManger(object):
     def getbuslines(self):
         return CityBusLines.objects.all()
 
+    def getstations(self,cityid):
+        return CityBusStations.objects.filter(busline__city_id=cityid);
+
     def hasbustype(self,city):
        return LineTypes.objects.filter(city=city)
 

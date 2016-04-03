@@ -7,7 +7,7 @@ django.jQuery(function($){
         if (value) {
             siblings.each(function(){
                 var elm = $(this);
-                elm.attr('href', elm.attr('data-href-template').replace('__fk__', value));
+                elm.attr('href', elm.attr('data-href-templates').replace('__fk__', value));
             });
         } else siblings.removeAttr('href');
     }

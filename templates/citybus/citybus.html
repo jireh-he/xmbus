@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="content" style="padding-top: 10px">
+<!-- 城市列表  开始-->
+<div id="myNav">
+<ul class="pagination">
+
+    {% for city in cities %}
+        <li {% ifequal city.id cityid%}
+            class="active"
+            {% endifequal %}>
+    <a href="?cityid={{ city.id }}&curPage={{ curPage }}&allPage={{ allPage }}">{{ city.cityname }}</a>
+    </li>
+    {% endfor %}
+
+</ul>
+
+    <ul class="pagination">
+ {% ifnotequal curPage 1 %}
+  <li><a href="?cityid={{ cityid }}&curPage={{ curPage }}&allPage={{ allPage }}&pageType=up">&laquo;</a></li>
+ {% endifnotequal %}
+    {% for p in pageRange %}
+  <li   {% ifequal p curPage %}
+         class="active"
+          {% endifequal %}><a href="?cityid={{ cityid }}&curPage={{ p }}&allPage={{ allPage }}">{{ p }}</a></li>
+    {% endfor %}
+ {% ifnotequal curPage allPage %}
+  <li><a href="?cityid={{ cityid }}&curPage={{ curPage }}&allPage={{ allPage }}&pageType=down">&raquo;</a></li>
+    {% endifnotequal %}
+</ul>
+</div>
+<!-- 城市列表  结束-->
+<!-- 站点列表 开始 -->
+<table class="table" id="bus_stops">
+<caption align="center"><h3>{{ cityname }}公交站点列表</h3>
+<div class="btn-toolbar">
+    <button class="btn btn-default" type="button" onclick="fetchPos('{{ cityname }}')">获取百度坐标</button>
+    <button class="btn btn-default" type="button" onclick="savPos('{{ cityid }}')">保存更新坐标</button>
+</div>
+</caption>
+    <thead>
+    <tr>
+        <th>站点名</th>
+        <th>途经线路</th>
+        <th>百度经度</th>
+        <th>百度纬度</th>
+        <th>gps经度</th>
+        <th>gps纬度</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for station in stations %}
+        <tr>
+        <td>{{ station.zdm }}</td>
+        <td>{% for xl in station.xlh %}
+            {{ xl }}
+            {% ifnotequal forloop.last True %}
+                <br>
+            {% endifnotequal %}
+        {% endfor %}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    {% endfor %}
+
+
+    </tbody>
+</table>
+<!-- 站点列表 结束 -->
+
+</div>
+
+
+
+{% endblock %}
+
+
+{% block jssection %}
+
+<script type="text/javascript" src="/static/js/jquery-1.12.0.min.js"></script>
+
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=BFcd9e84753ab8dcef34748bc43f952d"></script>
+<script type="text/javascript" src="/static/js/citybus/citybus.js"></script>
+<style type="text/css">
+
+
+	</style>
+
+<script>
+
+$.ajaxSetup({
+
+        data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+
+});
+
+</script>
+
+{% endblock %}

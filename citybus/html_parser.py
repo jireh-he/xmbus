@@ -40,3 +40,51 @@ class HtmlParser(object):
         else:
             return None
 
+    #获取js地址
+    def getcid(self,htmldoc):
+        soup=BeautifulSoup(htmldoc,'html.parser',from_encoding='utf-8')
+        jsurl=soup.find('script',attrs={"type":r'text/javascript',"src":re.compile(r'http://.+/(\d+).js$')})['src']
+        res=re.split('\.|/',jsurl)
+        cid=res[5]
+        return  cid
+
+    #解析获取的js脚本，获取所有公交站列表
+    def getstations(self,jsdoc):
+        pat=re.compile(r'Array\(.+\)')
+        arrs=pat.findall(jsdoc)
+        pat1=re.compile(r'".*?"')
+        line={"up":[],"down":[]}
+        if arrs and arrs[0]:
+            line['up']=pat1.findall(arrs[0])
+            if len(arrs)>1:
+                line['down']=pat1.findall(arrs[1])
+        upstations=[]
+        cnt=0
+        for up in line['up']:
+            if cnt < 7:
+                cnt += 1
+                continue
+            station=re.split(r'\|',up)
+            point=None
+            zdm=''
+            if station and len(station)>2:
+                point=station[0][1:]
+                zdm=station[1]
+            upstations.append({"p":point,"zdm":zdm})
+
+        downstations=[]
+        cnt=0
+        for down in line['down']:
+            if cnt < 7:
+                cnt += 1
+                continue
+            station=re.split(r'\|',down)
+            point=None
+            zdm=''
+            if station and len(station)>2:
+                point=station[0][1:]
+                zdm=station[1]
+            downstations.append({"p":point,"zdm":zdm})
+        return {"up":upstations,"down":downstations}
+
+
