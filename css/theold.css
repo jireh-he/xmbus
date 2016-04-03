@@ -9,9 +9,6 @@
   fill: steelblue;
 }
 
-.x.axis path {
-  display: none;
-}
 
 .tooltip{
 position: absolute;
