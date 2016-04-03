@@ -42,8 +42,10 @@ var layer = new Mapv.Layer({
                 //console.log('click', e.point, data);
                 var geoc = new BMap.Geocoder();
                 geoc.getLocation(e.point, function (rs) {
+                    console.log(rs);
                     var addComp = rs.addressComponents;
-                    alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street );
+                    alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street
+                    +"，老人出行人次:"+data);
                 });
             },
         }
