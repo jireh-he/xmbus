@@ -7,7 +7,7 @@ $("#map1").width(width*0.8).height(height *0.9);
 map.centerAndZoom("厦门",12);
 map.enableScrollWheelZoom(true);
 map.enablePinchToZoom(true);
-$.getJSON("/static/newjs/heat.json",function(data){
+$.getJSON("js/heat.json",function(data){
   var points=data;
   if(!isSupportCanvas()){
     	alert('热力图目前只支持有canvas支持的浏览器,您所使用的浏览器不能使用热力图功能~')
