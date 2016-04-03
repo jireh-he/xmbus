@@ -39,7 +39,12 @@ var layer = new Mapv.Layer({
         },
         events: {
             click: function(e, data) {
-                console.log('click', e.point, data)
+                //console.log('click', e.point, data);
+                var geoc = new BMap.Geocoder();
+                geoc.getLocation(e.point, function (rs) {
+                    var addComp = rs.addressComponents;
+                    alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street );
+                });
             },
         }
     }
